@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Faith EO</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        /* Hero Section */
+        
+        #hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            /* Memusatkan secara vertikal */
+            justify-content: center;
+            /* Memusatkan secara horizontal */
+            overflow: hidden;
+        }
+        
+        #hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+            z-index: 2;
+        }
+        
+        #hero .container {
+            position: relative;
+            z-index: 3;
+            /* Memastikan kontainer berada di atas gradasi */
+            color: white;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header fixed-top">
+
+        <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+                <div class="contact-info d-flex align-items-center">
+                    <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+                    <i class="bi bi-phone d-flex align-items-center ms-4"><span>+62 812 3456 7890</span></i>
+                </div>
+                <div class="languages d-none d-md-flex align-items-center">
+                    <ul>
+                        <li>En</li>
+                        <li><a href="#">De</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Bar -->
+
+        <div class="branding d-flex align-items-cente">
+
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <!-- <img src="assets/img/logo.png" alt=""> -->
+                    <h1 class="sitename">Faith EO</h1>
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="index.html">Home<br></a></li>
+                        <li><a href="creative.html" class="active">Creative Team</a></li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li><a href="order.html">Order</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+
+                <a class="btn-book-a-table d-none d-xl-block" href="#book-a-table">Login</a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+
+            <!-- Background Gradasi -->
+            <div class="hero-overlay"></div>
+
+            <img src="assets/img/Team Vendor.jpg" alt="" data-aos="fade-in">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
+                        <h2 data-aos="fade-up" data-aos-delay="100">Introduce <span>EO Faith</span></h2>
+                        <p data-aos="fade-up" data-aos-delay="200">Kenali lebih dekat visi, misi, dan karya kami di Faith EO melalui detail profil yang kami sajikan.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- /Hero Section -->
+
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+                    <div class="col-lg-4 order-2 order-lg-4">
+                        <div style="width: 100%; padding-top: 100%; position: relative; overflow: hidden;">
+                            <img src="assets/img/IMG-20241214-WA0037.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" alt="Gambar">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 order-2 order-lg-1 content">
+                        <h3>Faith EO</h3>
+                        <p class="fst-italic">
+                            Creative Team Faith EO hadir untuk Anda dengan ide-ide segar dan inovatif. Kami memastikan setiap detail acara dirancang dengan sempurna untuk menciptakan momen yang unik, berkesan, dan sesuai dengan keinginan Anda. Dengan tim profesional dan berpengalaman,
+                            kami siap menjadikan acara Anda lebih dari sekadar istimewa.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i> <span>Bekerja dengan Kepercayaan Penuh</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Komitmen pada Kualitas dan Keunggulan</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Inovasi Berbasis Keyakinan</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Kolaborasi dengan Semangat Kebersamaan</span></li>
+                            <li><i class="bi bi-check2-all"></i> <span>Integritas dan Profesionalisme</span></li>
+                        </ul>
+                        <p>
+                            Pesan sekarang dan kami akan memberikan hasil pelayanan terbaik buat Anda
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /About Section -->
+
+        <!-- Why Us Section -->
+        <section id="why-us" class="why-us section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>KENAPA KAMI</h2>
+                <p>Kenapa Memilih Jasa Kami?</p>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-item">
+                            <span>01</span>
+                            <h4><a href="" class="stretched-link">Bekerja dengan Kepercayaan Penuh</a></h4>
+                            <p>Tim kami selalu menjunjung tinggi kepercayaan yang diberikan oleh klien, memastikan setiap acara dirancang dengan sepenuh hati.</p>
+                        </div>
+                    </div>
+                    <!-- Card Item -->
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-item">
+                            <span>02</span>
+                            <h4><a href="" class="stretched-link">Komitmen pada Kualitas dan Keunggulan</a></h4>
+                            <p>Kami percaya bahwa setiap momen istimewa layak mendapatkan kualitas terbaik dan perhatian pada setiap detail.</p>
+                        </div>
+                    </div>
+                    <!-- Card Item -->
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-item">
+                            <span>03</span>
+                            <h4><a href="" class="stretched-link">Integritas dan Profesionalisme</a></h4>
+                            <p>Dengan keyakinan pada nilai-nilai kejujuran dan dedikasi, kami memastikan setiap acara berjalan lancar dan memuaskan.</p>
+                        </div>
+                    </div>
+                    <!-- Card Item -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Why Us Section -->
+
+        <!-- Chefs Section -->
+        <section id="chefs " class="chefs section ">
+
+            <!-- Section Title -->
+            <div class="container section-title " data-aos="fade-up ">
+                <h2>Team</h2>
+                <p>Profile</p>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container ">
+
+                <div class="row gy-4 ">
+
+                    <div class="col-lg-4 " data-aos="fade-up " data-aos-delay="100 ">
+                        <div class="member ">
+                            <img src="assets/img/Team/Franz.jpg " class="img-fluid " alt=" ">
+                            <div class="member-info ">
+                                <div class="member-info-content ">
+                                    <h4>Franz</h4>
+                                    <span>Dark Sistem</span>
+                                </div>
+                                <div class="social ">
+                                    <a href=" "><i class="bi bi-twitter-x "></i></a>
+                                    <a href=" "><i class="bi bi-facebook "></i></a>
+                                    <a href=" "><i class="bi bi-instagram "></i></a>
+                                    <a href=" "><i class="bi bi-linkedin "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Team Member -->
+
+                    <div class="col-lg-4 " data-aos="fade-up " data-aos-delay="200 ">
+                        <div class="member ">
+                            <img src="assets/img/Team/Jona.png " class="img-fluid " alt=" ">
+                            <div class="member-info ">
+                                <div class="member-info-content ">
+                                    <h4>Jonathan Andrew</h4>
+                                    <span>Program Director/Leader</span>
+                                </div>
+                                <div class="social ">
+                                    <a href=" "><i class="bi bi-twitter-x "></i></a>
+                                    <a href=" "><i class="bi bi-facebook "></i></a>
+                                    <a href=" "><i class="bi bi-instagram "></i></a>
+                                    <a href=" "><i class="bi bi-linkedin "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Team Member -->
+
+                    <div class="col-lg-4 " data-aos="fade-up " data-aos-delay="300 ">
+                        <div class="member ">
+                            <img src="assets/img/Team/Geo.jpg " class="img-fluid " alt=" ">
+                            <div class="member-info ">
+                                <div class="member-info-content ">
+                                    <h4>Yohanes Geovanni Siregar</h4>
+                                    <span>All Role</span>
+                                </div>
+                                <div class="social ">
+                                    <a href=" "><i class="bi bi-twitter-x "></i></a>
+                                    <a href=" "><i class="bi bi-facebook "></i></a>
+                                    <a href=" "><i class="bi bi-instagram "></i></a>
+                                    <a href=" "><i class="bi bi-linkedin "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Team Member -->
+                    <div class="col-lg-4 " data-aos="fade-up " data-aos-delay="300 ">
+                        <div class="member ">
+                            <img src="assets/img/Team/Josua.jpg " class="img-fluid " alt=" ">
+                            <div class="member-info ">
+                                <div class="member-info-content ">
+                                    <h4>Josua Ronaldo Pandiangan</h4>
+                                    <span>Visual Joceky/Designer Creative</span>
+                                </div>
+                                <div class="social ">
+                                    <a href=" "><i class="bi bi-twitter-x "></i></a>
+                                    <a href=" "><i class="bi bi-facebook "></i></a>
+                                    <a href=" "><i class="bi bi-instagram "></i></a>
+                                    <a href=" "><i class="bi bi-linkedin "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Team Member -->
+
+                    <div class="col-lg-4 " data-aos="fade-up " data-aos-delay="300 ">
+                        <div class="member ">
+                            <img src="assets/img/Team/Zeus.jpg " class="img-fluid " alt=" ">
+                            <div class="member-info ">
+                                <div class="member-info-content ">
+                                    <h4>Zeus Sitepu</h4>
+                                    <span>Cameraman</span>
+                                </div>
+                                <div class="social ">
+                                    <a href=" "><i class="bi bi-twitter-x "></i></a>
+                                    <a href=" "><i class="bi bi-facebook "></i></a>
+                                    <a href=" "><i class="bi bi-instagram "></i></a>
+                                    <a href=" "><i class="bi bi-linkedin "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Team Member -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Member Section -->
+
+
+    </main>
+
+    <footer id="footer " class="footer ">
+
+        <div class="container footer-top ">
+            <div class="row gy-4 ">
+                <div class="col-lg-4 col-md-6 footer-about ">
+                    <a href="index.html " class="logo d-flex align-items-center ">
+                        <span class="sitename ">Faith EO</span>
+                    </a>
+                    <div class="footer-contact pt-3 ">
+                        <p>Jalan Letjend Jamin Ginting KM.11,5 No.65, Simpang Selayang, Kec. Medan Tuntungan, Kota Medan, Sumatera Utara 20135</p>
+                        <p class="mt-3 "><strong>Phone:</strong> <span>+1 000 0000 0000</span></p>
+                        <p><strong>Email:</strong> <span>faitheo@gmail.com</span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4 ">
+                        <a href=" "><i class="bi bi-twitter-x "></i></a>
+                        <a href=" "><i class="bi bi-facebook "></i></a>
+                        <a href=" "><i class="bi bi-instagram "></i></a>
+                        <a href=" "><i class="bi bi-linkedin "></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links ">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="# ">Home</a></li>
+                        <li><a href="# ">About us</a></li>
+                        <li><a href="# ">Services</a></li>
+                        <li><a href="# ">Terms of service</a></li>
+                        <li><a href="# ">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links ">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="# ">Cameraman</a></li>
+                        <li><a href="# ">Program Directory</a></li>
+                        <li><a href="# ">Visual Jockey</a></li>
+                        <li><a href="# ">Designer Creative</a></li>
+                        <li><a href="# ">Text Oprator</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 footer-newsletter ">
+                    <h4>Our Newsletter</h4>
+                    <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                    <form action="forms/newsletter.php " method="post " class="php-email-form ">
+                        <div class="newsletter-form "><input type="email " name="email "><input type="submit " value="Subscribe "></div>
+                        <div class="loading ">Loading</div>
+                        <div class="error-message "></div>
+                        <div class="sent-message ">Your subscription request has been sent. Thank you!</div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4 ">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename ">Faith EO</strong> <span>All Rights Reserved</span></p>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="# " id="scroll-top " class="scroll-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader "></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/vendor/php-email-form/validate.js "></script>
+    <script src="assets/vendor/aos/aos.js "></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js "></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js "></script>
+
+</body>
+
+</html>

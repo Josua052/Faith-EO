@@ -1,10 +1,4 @@
-<?php 
-session_start(); if (isset($_SESSION[ 'user_id'])) { echo '
-<div class="user-info d-flex align-items-center">'; echo '<span class="me-3">Hello, ' . htmlspecialchars($_SESSION[ 'name']) . '</span>'; echo '<a class="btn-book-a-table d-none d-xl-block" href="logout.php">Logout</a>'; echo '</div>';} else echo '
-<a class="btn-book-a-table d-none d-xl-block" href="login.php">Login</a>'; } ?>
-
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -33,20 +27,29 @@ session_start(); if (isset($_SESSION[ 'user_id'])) { echo '
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        #book-a-table .form-control {
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+        #book-a-table select.form-control {
+            background: #fff;
+            color: #333;
+        }
+    </style>
 </head>
 
 <body class="index-page">
 
     <header id="header" class="header fixed-top">
+
         <div class="topbar d-flex align-items-center">
             <div class="container d-flex justify-content-center justify-content-md-between">
                 <div class="contact-info d-flex align-items-center">
-                    <i class="bi bi-envelope d-flex align-items-center">
-                        <a href="mailto:contact@example.com">contact@example.com</a>
-                    </i>
-                    <i class="bi bi-phone d-flex align-items-center ms-4">
-                        <span>+62 812 3456 7890</span>
-                    </i>
+                    <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+                    <i class="bi bi-phone d-flex align-items-center ms-4"><span>+62 812 3456 7890</span></i>
                 </div>
                 <div class="languages d-none d-md-flex align-items-center">
                     <ul>
@@ -58,27 +61,35 @@ session_start(); if (isset($_SESSION[ 'user_id'])) { echo '
         </div>
         <!-- End Top Bar -->
 
-        <div class="branding d-flex align-items-center">
+        <div class="branding d-flex align-items-cente">
+
             <div class="container position-relative d-flex align-items-center justify-content-between">
-                <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
+                <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <!-- <img src="assets/img/logo.png" alt=""> -->
                     <h1 class="sitename">Faith EO</h1>
                 </a>
 
                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li><a href="index.php" class="active">Home</a></li>
-                        <li><a href="creative.php">Creative Team</a></li>
-                        <li><a href="portfolio.php">Portfolio</a></li>
-                        <li><a href="order.php">Order</a></li>
+                        <li><a href="index.html">Home<br></a></li>
+                        <li><a href="creative.html">Creative Team</a></li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li><a href="order.html" class="active">Order</a></li>
+
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
 
+                <a class="btn-book-a-table d-none d-xl-block" href="#book-a-table">Login</a>
 
             </div>
-        </div>
-    </header>
 
+        </div>
+
+    </header>
 
     <main class="main">
 
@@ -90,12 +101,9 @@ session_start(); if (isset($_SESSION[ 'user_id'])) { echo '
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
-                        <h2 data-aos="fade-up" data-aos-delay="100">Welcome to <span>EO Faith</span></h2>
+                        <h2 data-aos="fade-up" data-aos-delay="100">Silahkan Cek List Packages<span>EO Faith</span></h2>
                         <p data-aos="fade-up" data-aos-delay="200">Bersama Faith EO, wujudkan momen spesial Anda dengan perencanaan yang sempurna dan berkesan.</p>
-                        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-                            <a href="order.html" class="cta-btn">Order Jasa</a>
-                            <a href="creative.html" class="cta-btn">Creative Team</a>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -103,41 +111,6 @@ session_start(); if (isset($_SESSION[ 'user_id'])) { echo '
         </section>
         <!-- /Hero Section -->
 
-        <!-- About Section -->
-        <section id="about" class="about section">
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row gy-4">
-                    <div class="col-lg-4 order-2 order-lg-4">
-                        <div style="width: 100%; padding-top: 100%; position: relative; overflow: hidden;">
-                            <img src="assets/img/IMG-20241214-WA0037.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" alt="Gambar">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 order-2 order-lg-1 content">
-                        <h3>Faith EO</h3>
-                        <p class="fst-italic">
-                            Creative Team Faith EO hadir untuk Anda dengan ide-ide segar dan inovatif. Kami memastikan setiap detail acara dirancang dengan sempurna untuk menciptakan momen yang unik, berkesan, dan sesuai dengan keinginan Anda. Dengan tim profesional dan berpengalaman,
-                            kami siap menjadikan acara Anda lebih dari sekadar istimewa.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check2-all"></i> <span>Bekerja dengan Kepercayaan Penuh</span></li>
-                            <li><i class="bi bi-check2-all"></i> <span>Komitmen pada Kualitas dan Keunggulan</span></li>
-                            <li><i class="bi bi-check2-all"></i> <span>Inovasi Berbasis Keyakinan</span></li>
-                            <li><i class="bi bi-check2-all"></i> <span>Kolaborasi dengan Semangat Kebersamaan</span></li>
-                            <li><i class="bi bi-check2-all"></i> <span>Integritas dan Profesionalisme</span></li>
-                        </ul>
-                        <p>
-                            Pesan sekarang dan kami akan memberikan hasil pelayanan terbaik buat Anda
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-        <!-- /About Section -->
 
         <!-- Why Us Section -->
         <section id="why-us" class="why-us section">
@@ -188,108 +161,6 @@ session_start(); if (isset($_SESSION[ 'user_id'])) { echo '
         <!-- /Why Us Section -->
 
 
-        <!-- Specials Section -->
-        <section id="specials" class="specials section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Specials</h2>
-                <p>Role Our Team</p>
-            </div>
-            <!-- End Section Title -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row">
-                    <div class="col-lg-3">
-                        <ul class="nav nav-tabs flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">Cameraman</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">Program Director</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">VJ(VisualJockey)</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">Design Creative</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">Text Operator</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-9 mt-4 mt-lg-0">
-                        <div class="tab-content">
-                            <div class="tab-pane active show" id="specials-tab-1">
-                                <div class="row">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Cameraman</h3>
-                                        <p>"Tim kameramen kami siap mengabadikan setiap momen acara Anda dengan kualitas visual yang memukau. Dengan pengalaman di bidangnya, mereka memastikan tidak ada momen berharga yang terlewat."</p>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/Special/Special 1.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="specials-tab-2">
-                                <div class="row">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Program Director</h3>
-                                        <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                                        <p>Sebagai otak di balik acara, Program Director kami mengatur jalannya acara dengan teliti dan memastikan setiap elemen berjalan sesuai rencana. Mereka berkomitmen untuk menciptakan acara yang lancar dan tak terlupakan.</p>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/Special/Special 2.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="specials-tab-3">
-                                <div class="row">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Visual Jockey</h3>
-                                        <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                                        <p>VJ kami menciptakan suasana yang dinamis dan menghidupkan acara Anda dengan pengaturan visual yang kreatif. Dengan kemampuan mengatur proyeksi dan visual yang sesuai tema, acara Anda akan lebih berkesan.</p>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/Special/Special 3.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="specials-tab-4">
-                                <div class="row">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Design Creative</h3>
-                                        <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                                        <p>Desainer kami ahli dalam menciptakan desain yang menarik, mulai dari flyer, spanduk, hingga materi promosi lainnya. Setiap desain dibuat dengan perhatian pada detail dan selaras dengan konsep acara Anda.</p>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/Special/Special 4.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="specials-tab-5">
-                                <div class="row">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Text Operator</h3>
-                                        <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                                        <p>Text Operator kami bertanggung jawab untuk menampilkan pesan, informasi, dan teks yang dibutuhkan selama acara. Dengan keahlian dalam mengelola layar teks, mereka memastikan komunikasi visual yang jelas dan efektif.
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/Special/Special 5.jpg" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-        <!-- /Specials Section -->
 
         <!-- Events Section -->
         <section id="events" class="events section">
@@ -394,6 +265,72 @@ session_start(); if (isset($_SESSION[ 'user_id'])) { echo '
 
         </section>
         <!-- /Events Section -->
+
+        <!-- Book A Event Section -->
+        <section id="book-a-table" class="book-a-table section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>RESERVATION</h2>
+                <p>Pesanan Jumlah Besar</p>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <form action="book-a-event.php" method="post" role="form" class="php-email-form">
+
+                    <div class="row gy-4">
+                        <!-- Nama -->
+                        <div class="col-lg-4 col-md-6">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-lg-4 col-md-6">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                        </div>
+
+                        <!-- Nomor Telepon -->
+                        <div class="col-lg-4 col-md-6">
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+                        </div>
+
+                        <!-- Paket Acara -->
+                        <div class="col-lg-4 col-md-6">
+                            <select name="package" id="package" class="form-control" required="">
+                        <option value="" disabled selected>Select Package</option>
+                        <option value="birthday">Birthday Package</option>
+                        <option value="christmas">Christmas Package</option>
+                        <option value="wedding">Wedding Package</option>
+                    </select>
+                        </div>
+
+                        <!-- Hari Pelaksanaan -->
+                        <div class="col-lg-4 col-md-6">
+                            <input type="date" name="event_date" class="form-control" id="event_date" required="">
+                        </div>
+                    </div>
+
+                    <!-- Pesan -->
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+                    </div>
+
+                    <!-- Tombol Submit -->
+                    <div class="text-center mt-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+                <!-- End Reservation Form -->
+
+            </div>
+
+        </section>
+        <!-- /Book A Event Section -->
 
 
         <!-- Testimonials Section -->
@@ -508,8 +445,6 @@ session_start(); if (isset($_SESSION[ 'user_id'])) { echo '
       </div>
 
     </section><!-- /Testimonials Section -->
-
-    
 
     <!-- Contact Section -->
     <section id="contact " class="contact section ">
